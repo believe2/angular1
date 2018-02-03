@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+	<link rel="stylesheet" href="../lib/kendoUI/kendo.common.min.css"/>
+  <link rel="stylesheet" href="../lib/kendoUI/kendo.rtl.min.css"/>
+  <link rel="stylesheet" href="../lib/kendoUI/kendo.silver.min.css"/>
+	<link rel="stylesheet" href="../lib/kendoUI/kendo.default.min.css"/>
+
+  <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="../lib/jquery/jquery-ui.min.css"/>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <script src="../lib/jquery/jquery.js"></script>
+  <script src="../lib/jquery/jquery-ui.min.js"></script>
+
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="../lib/angular1/angular.min.js"></script>
+
+	<script src="../lib/kendoUI/kendo.all.min.js"></script>
+  <script src="../lib/xlsx/xlsx.full.min.js"></script>
+
+	<script src="main.js"></script>
+  <script src="xlsxProcessor.js"></script>
+  </head>
+  <body>
+    <div id="example" ng-app="TapSmpOiGererator">
+      <div ng-controller="GridCtrl">
+        <input type="file" class="form-control" xlsx-model="excel" multiple>
+        <kendo-grid options="mainGridOptions"></kendo-grid>
+      </div>
+    </div>
+    <div id="dialog-confirm">
+      <p><span style="float:left; margin:0 7px 20px 0;"></span></p>
+    </div>
+</body>
+</html>
